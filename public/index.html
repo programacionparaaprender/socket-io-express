@@ -5,19 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
-    <link href="./style.css" rel="stylesheet"/>
-    <title>Document</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Carga de fuentes de Font  Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Carga de estilos css personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Ejemplo de chat</title>
 </head>
 <body>
-    <div id="aos-chat">
-        <h2>AOS Chat</h2>
-        <div id="chat-window">
-            <div id="output"></div>
-            <div id="feedback"></div>
+    <h1 style="text-align: center;" class="card-title">Chat en tiempo real</h1>
+    <form>
+        <div class="card" style="width: 28rem;margin:auto;padding:5rem;">
+            <div class="card-body">
+                <h5 class="card-title">Chat de ejemplo</h5>
+                <div class="form-group">
+                    <input class="form-control" id="baslik" type="text" placeholder="nombre" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="mesaj" type="text" placeholder="mesaje" />
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button id="gonder" type="button" class="btn btn-primary">Enviar mensaje</button>
+                    <button id="gonder" type="reset" class="btn btn-warning">Limpiar</button>
+                </div>
+                
+                
+            </div>
         </div>
-        <input id="baslik" type="text" placeholder="Başlık" />
-        <input id="mesaj" type="text" placeholder="Mesaj" />
-        <button id="gonder">Gönder</button>
+    </form>
+    <div class="card" style="width: 28rem;margin:auto;padding:5rem;">
+        <div class="card-body">
+            <h5 class="card-title">Chat en tiempo real</h5>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+        </div>
     </div>
     <script src="./chat.js"> </script>
 </body>
