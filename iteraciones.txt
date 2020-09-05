@@ -1,1 +1,7 @@
 https://github.com/aosgame/NodeJs-ve-Socket.io-ile-Chat-App
+
+
+-----------------------
+conectar con sql server
+-----------------------
+https://docs.microsoft.com/en-us/sql/connect/node-js/step-3-proof-of-concept-connecting-to-sql-using-node-js?view=sql-server-ver15
